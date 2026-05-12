@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodGram</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header" id="site-header"></header>
+
+    <main class="main-content">
+      <section class="album-section" aria-labelledby="album-title">
+        <h1 id="album-title">Your personal food album</h1>
+        <ul class="photo-grid" id="photo-grid" aria-label="Photo album"></ul>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="site-footer"></footer>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true"></div>
+
+  <script src="scripts/data/photos.js"></script>
+  <script src="scripts/components/molecules/header.js"></script>
+  <script src="scripts/components/molecules/footer.js"></script>
+  <script src="scripts/components/molecules/gallery.js"></script>
+  <script src="scripts/components/molecules/lightbox.js"></script>
+  <script src="scripts/debugger.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 455 78" role="img" aria-labelledby="title">
+  <title id="title">FoodGram</title>
+  <defs>
+    <linearGradient id="plate" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffb703"/>
+      <stop offset="1" stop-color="#2ec4b6"/>
+    </linearGradient>
+  </defs>
+  <circle cx="39" cy="39" r="36" fill="url(#plate)"/>
+  <circle cx="39" cy="39" r="24" fill="#071923"/>
+  <path d="M21 31h25c7 0 12 5 12 12v3H21Z" fill="#ff6b35"/>
+  <path d="M24 28c6-8 23-8 29 0Z" fill="#ffe66d"/>
+  <circle cx="31" cy="37" r="3" fill="#2ec4b6"/>
+  <circle cx="42" cy="36" r="3" fill="#2ec4b6"/>
+  <circle cx="51" cy="39" r="3" fill="#2ec4b6"/>
+  <text x="96" y="65"
+        fill="#ffffff"
+        font-family="Arial Rounded MT Bold, Arial, Helvetica, sans-serif"
+        font-size="64"
+        font-weight="900"
+        letter-spacing="0">FoodGram</text>
+</svg>
