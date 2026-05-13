@@ -23,9 +23,14 @@ function closePhoto() {
 }
 
 function changePhoto(direction) {
-  let nextIndex = currentIndex + direction + PHOTOS.length;
-  currentIndex = nextIndex % PHOTOS.length;
-  updateLightbox(lightbox, PHOTOS, currentIndex);
+  const img = lightbox.querySelector(".lightbox-image");
+  img.classList.add("is-changing");
+  window.setTimeout(function () {
+    let nextIndex = currentIndex + direction + PHOTOS.length;
+    currentIndex = nextIndex % PHOTOS.length;
+    updateLightbox(lightbox, PHOTOS, currentIndex);
+    img.classList.remove("is-changing");
+  }, 150);
 }
 
 function bindLightboxEvents() {

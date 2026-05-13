@@ -305,12 +305,18 @@ img {
 
 .lightbox-image-wrap {
   grid-column: 1 / -1;
+  height: min(52vh, 460px);
 }
 
 .lightbox-image {
   width: 100%;
-  max-height: min(52vh, 460px);
+  height: 100%;
   object-fit: cover;
+  transition: opacity 150ms ease;
+}
+
+.lightbox-image.is-changing {
+  opacity: 0;
 }
 
 .lightbox-controls {
