@@ -284,13 +284,6 @@ img {
   transform: translateY(12px) scale(0.98);
 }
 
-.lightbox-title {
-  margin: 0;
-  align-self: center;
-  font-size: 26px;
-  line-height: 1.2;
-}
-
 .lightbox-close {
   width: 42px;
   height: 42px;
