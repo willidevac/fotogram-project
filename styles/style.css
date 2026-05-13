@@ -26,7 +26,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
-  overflow-x: hidden;
   background:
     radial-gradient(circle at 24% 20%, rgba(255, 183, 3, 0.16), transparent 30%),
     radial-gradient(circle at 78% 34%, rgba(255, 107, 53, 0.12), transparent 32%),
@@ -79,6 +78,7 @@ img {
 .main-content {
   flex: 1;
   width: 100%;
+  overflow-x: clip;
 }
 
 .album-section {
@@ -361,6 +361,13 @@ img {
   }
 }
 
+@media (max-width: 960px) {
+  .photo-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+  }
+}
+
 @media (max-width: 760px) {
   :root {
     --content-width: min(100% - 24px, 1440px);
@@ -424,7 +431,12 @@ img {
     width: min(100%, 292px);
   }
 
+  .album-section {
+    padding: 48px 0 72px;
+  }
+
   .album-section h1 {
+    margin-bottom: 36px;
     font-size: 34px;
   }
 
