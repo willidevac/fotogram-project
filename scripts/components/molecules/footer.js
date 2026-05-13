@@ -4,7 +4,7 @@ const FOOTER_TEMPLATE = `
       <span class="academy-icon" aria-hidden="true"></span>
       <span class="academy-text">Developer<br>Akademie</span>
     </div>
-    <p class="copyright">&copy; 2023 Developer Akademie GmbH</p>
+    <p class="copyright">&copy; 2026 Developer Akademie GmbH</p>
   </div>
 `;
 
